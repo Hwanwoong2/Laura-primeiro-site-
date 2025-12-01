@@ -1,0 +1,904 @@
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #000;
+    border-radius: 2rem;
+    padding: 3rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.auth-card {
+    background: #2a2a2a;
+    border-radius: 3rem;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.card-white {
+    background: #2a2a2a;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+/* Navegação */
+.nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav button:hover {
+    text-decoration: underline;
+}
+
+.nav-dark button {
+    color: #1f2937;
+}
+
+/* Grid de 2 colunas */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Logo Container */
+.floral-icon {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.floral-icon-servicos {
+    width: 105%;  
+    height: 105%;
+    object-fit: contain;
+}
+
+.logo-image {
+    width: 550px;  
+    height: 550px;  
+    max-width: none;
+    border-radius: 2rem;
+    object-fit: contain;  
+}
+
+.logo-container {
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: auto;
+    object-fit: contain;
+}
+
+.logo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #d4a5a5;
+}
+
+.logo-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: #8b7373;
+}
+
+.logo-circle {
+    background: white;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    overflow: hidden;
+    margin-left: 1.5rem;  
+}
+
+/* Formulários */
+.form-container {
+    background: white;
+    border-radius: 3rem;
+    padding: 4rem 3rem;
+}
+
+.form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #000;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.input-field {
+    width: 100%;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 9999px;
+    padding: 1.2rem 1.8rem;
+    font-size: 1rem;
+}
+
+.input-field::placeholder {
+    color: #aaa;
+}
+
+.input-password {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #1a1a1a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #555555;
+}
+
+.btn-agendar {
+    font-size: 1.125rem;
+    padding: 1.2rem;
+    text-transform: capitalize;
+}
+
+.btn-secondary {
+    background: #e8e8e8;
+    color: #000;
+    margin-top: 0;
+}
+
+.btn-secondary:hover {
+    background: #d8d8d8;
+}
+
+.divider {
+    text-align: center;
+    color: #aaa;
+    margin: 1rem 0;
+    display: flex;  
+    align-items: center;  
+    gap: 1rem;  
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #d1d5db;  
+}
+
+.form-container .divider {
+    margin: 0.8rem 0;  
+}
+
+.form-container .btn-primary {
+    margin-bottom: 0.3rem !important;  
+}
+
+.forgot-password {
+    text-align: right;
+    color: #aaa;
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Home Page */
+#page-home .contacts-wrapper {
+    background: #1a1a1a;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.home-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 2rem;  
+    border-radius: 1rem;  
+    display: inline-block;  
+}
+
+.text-box {
+    background: #f5f5f5;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+}
+
+.text-box::before {
+    content: '';
+    position: absolute;
+    right: 2rem;
+    left: 50%;
+    top: 50%; 
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-image: url('floral-transparente.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.38;
+    width: 550px;
+    height: 550px;
+}
+
+.text-box p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 3rem;
+    position: relative;
+    z-index: 1;
+    color: black;
+    margin: auto;
+    
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #2a2a2a;  
+    border-radius: 2.5rem;
+    padding: 3rem 2rem;
+    min-height: 450px;
+    justify-content: center;
+}
+
+.btn-large {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 2rem 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.btn-large:hover {
+    background: #555555;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Páginas fullscreen para contatos, agendamento, serviços e localização */
+.page-fullscreen {
+    background: #000;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.page-fullscreen.hidden {
+    display: none;
+}
+
+.contacts-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    background: #1a1a1a;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+/* Contatos */
+.contact-btn {
+    font-family: 'Playfair Display';
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 1.8rem 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background: #555555;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.schedule-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 3rem 4rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.schedule-btn:hover {
+    background: #555555;
+}
+
+/* Calendário */
+.calendar-container {
+    border: 2px solid #000;
+    border-radius: 2rem;
+    padding: 2rem;
+    background: #1a1a1a;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #333;
+    border-radius: 1rem;
+    color: white;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar-month {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: white;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.calendar-day:hover:not(:disabled) {
+    background: white;
+    color: #1a1a1a;
+}
+
+.calendar-day.selected {
+    background: #000;
+    color: white;
+    font-weight: 600;
+}
+
+.calendar-day:disabled {
+    cursor: default;
+    background: #1a1a1a;
+    color: #666;
+}
+
+.calendar-day:disabled::after {
+    content: '';
+}
+
+.calendar-weekday {
+    font-weight: 600;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    color: white;
+    border: 1px solid #000;
+    background: #333;
+}
+
+/* Serviços */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 2rem;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.service-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    z-index: 1;
+}
+
+.service-card span {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0 0 2rem 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cards com placeholder (quadrados com X) */
+.service-card-placeholder {
+    background: #1a1a1a;
+    border: 3px solid white;
+    border-radius: 2rem;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-card-placeholder::before,
+.service-card-placeholder::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: white;
+    top: 50%;
+    left: 50%;
+}
+
+.service-card-placeholder::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.service-card-placeholder::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.service-card-placeholder span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-top: 100px;
+}
+
+.service-card-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+}
+
+.services-sidebar {
+    width: 320px;
+}
+
+.services-sidebar .nav {
+    justify-content: center;  /* ← Centraliza os botões */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.services-layout {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Localização */
+.location-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.location-info {
+    flex: 1;
+}
+
+.location-address {
+    background: #1a1a1a;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.location-address p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.location-map {
+    flex: 1;
+    background: #e5e7eb;
+    border-radius: 2rem;
+    height: 400px;
+    overflow: hidden;
+}
+
+.location-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.back-btn:hover {
+    color: #000;
+}
+
+/* Seta de voltar */
+.back-arrow {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.back-arrow:hover {
+    transform: translateX(-5px);
+}
+
+.back-arrow-white {
+    color: white;
+}
+
+.agendamento-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+    color:white;  
+    text-align: center;
+    letter-spacing: 0.15em;
+    grid-column: 1 / -1;
+    background: rgba(255, 255, 255, 0.05);  
+    padding: 1.5rem;  
+    border-radius: 1rem;  
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    font-size: 0.8rem;
+}
+
+select.agendamento-input {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.nav-dark button {
+    color: #1f2937;
+}
+
+.agendamento-card {
+    background: 2a2a2a;
+}
+
+.agendamento-grid {
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.agendamento-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 0;
+}
+
+.agendamento-input[type="text"],
+.agendamento-input {
+    background: #1a1a1a !important;
+    padding: 1.2rem 1.8rem !important;
+    border-radius: 9999px !important;
+    font-size: 1rem !important;
+    color: white !important;
+}
+
+.agendamento-input::placeholder {
+    color: #888;  
+}
+
+.agendamento-wrapper {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-y {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;  
+    padding-left: 2rem;  
+    padding-right: 2rem;  
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .services-layout {
+        flex-direction: column;
+    }
+    .services-sidebar {
+        width: 100%;
+    }
+    .location-content {
+        flex-direction: column;
+    }
+    .logo-title {
+        font-size: 2.5rem;
+    }
+    .home-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Página de Agendamento Concluído - Estética Escura */
+#page-agendamento-concluido {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#page-agendamento-concluido .agendamento-wrapper {
+    background: #1a1a1a;
+    border-radius: 3rem;
+    padding: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+#page-agendamento-concluido .card-white {
+    background: #2a2a2a;
+    border-radius: 2.5rem;
+    padding: 5rem 6rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: none;
+}
+
+#page-agendamento-concluido h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+#page-agendamento-concluido .floral-icon-concluido {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    bottom: 0.02rem;
+    left: 0.1rem;
+    opacity: 1;
+    filter: brightness(0) invert(1);
+}
+
+#page-agendamento-concluido .floral-icon-concluido-direita {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    bottom: 0.02rem;
+    right: 0.1rem;  
+    opacity: 1;
+    filter: brightness(0) invert(1);
+    transform: scaleX(-1);  
+}
+
+#page-agendamento-concluido .btn-primary {
+    background: white;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    max-width: 450px;
+    transition: all 0.3s;
+}
+
+#page-agendamento-concluido .btn-primary:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
